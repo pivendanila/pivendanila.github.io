@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Concrete';
+    src: url('fonts/Concrete.otf') format('opentype');
+}
+@font-face {
+    font-family: 'BebasBook';
+    src: url('fonts/BebasNeue-Book.otf') format('opentype');
+}
+@font-face {
+    font-family: 'BebasBold';
+    src: url('fonts/BebasNeue-Bold.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Golos';
+    src: url('fonts/Golos.ttf') format('truetype');
+}
+
+body {
+	width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+	display: inline-block;
+	background-color: #fff;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	font-style: normal;
+	font-weight: 200;
+}
+
+.title {
+	font-family: 'BebasBook';
+	color: #fff;
+	font-weight: 1000;
+	font-size: 35px;
+	letter-spacing: 0.75px;
+	margin-left: 5vw;
+}
+.about_info{
+	font-family: 'Golos';
+	font-size: 20px;
+	letter-spacing: 0.75px;
+	margin-left: 5vw;
+	width: 60vw;
+}
+
+.title_r {
+	text-align: right;
+	font-family: 'BebasBook';
+	color: #fff;
+	font-weight: 1000;
+	font-size: 35px;
+	letter-spacing: 0.75px;
+	margin-right: 5vw;
+}
+.about_info_r{
+	text-align: right;
+	font-family: 'Golos';
+	font-size: 20px;
+	letter-spacing: 0.75px;
+	margin-right: 5vw;
+	margin-left: auto;
+	width: 60vw;
+}
+
+.panel {
+	height: 12vh;
+	display: flex;
+	background-color: #fff;
+	align-items: center;
+	padding:0 25px 0 25px;
+}
+.logo {
+	font-family: 'Concrete';
+	color: #124f6b;
+	font-size: 30px;
+	display: flex;
+}
+.nav_bar {
+	font-family: 'BebasBook';
+	color: #124f6b;
+	font-size: 22px;
+	font-weight: 700;
+	letter-spacing: 0.75px;
+	margin-left: auto;
+	display: flex;
+	gap: 30px;
+}
+
+.photo {
+    width: 100vw;
+    height: 89vh;
+}
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main{
+	padding-top: 10vh;
+	position: absolute;
+	margin-top: 10vh;
+	margin-bottom: 13vh;
+}
+.main p {
+	color: #fff;
+	font-size: 25px;
+}
+
+.activities {
+	background-color: #fff;
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+}
+.activities p {
+	color: #124f6b;
+}
+
+.career {
+	padding-top: 10vh;
+	background-color: #124f6b;
+	padding-bottom: 10vh;
+}
+.career p {
+	color: #fff;
+}
+
+.capital {
+	padding-top: 20vh;
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+}
+.capital p {
+	color: #124f6b;
+}
+
+.EHZ {
+	position: absolute;
+	align-items: center;
+	padding-top: 30vh;
+	margin-bottom: 13vh;
+}
+.EHZ p{
+	color: #fff;
+}
+
+.contacts {
+	background-color: #fff;
+	margin-top: 10vh;
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+}
+.contacts p {
+	color: #124f6b;
+}
+.footer {
+	height: 20vh;
+	background-color: #124f6b
+}
