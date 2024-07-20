@@ -1,20 +1,20 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: 'Concrete';
-    src: url('fonts/Concrete.otf') format('opentype');
+    font-family: 'Tektur';
+    src: url('fonts/Tektur.ttf') format('ttf');
 }
 @font-face {
-    font-family: 'BebasBook';
-    src: url('fonts/BebasNeue-Book.otf') format('opentype');
+    font-family: 'Iceland';
+    src: url('fonts/Iceland.ttf') format('truetype');
 }
 @font-face {
-    font-family: 'BebasBold';
-    src: url('fonts/BebasNeue-Bold.otf') format('opentype');
+    font-family: 'Prata';
+    src: url('fonts/Prata-Regular.ttf') format('truetype');
 }
 @font-face {
-    font-family: 'Golos';
-    src: url('fonts/Golos.ttf') format('truetype');
+    font-family: 'Manrope';
+    src: url('fonts/Manrope.ttf') format('truetype');
 }
 
 body {
@@ -32,64 +32,109 @@ body {
 }
 
 .title {
-	font-family: 'BebasBook';
-	color: #fff;
-	font-weight: 1000;
+	font-family: 'Prata';
+	color: #1538AE;
+	font-weight: 400;
 	font-size: 35px;
 	letter-spacing: 0.75px;
-	margin-left: 5vw;
+	margin: 0 0 0 10vw;
+}
+.title:hover {
+	cursor: default
 }
 .about_info{
-	font-family: 'Golos';
-	font-size: 20px;
+	text-align: left;
+	font-family: 'Manrope';
+	color: #000;
+	font-size: 18px;
 	letter-spacing: 0.75px;
-	margin-left: 5vw;
-	width: 60vw;
+	margin: 1% 0 0 10%;
+	width: 65%;
 }
-
 .title_r {
 	text-align: right;
-	font-family: 'BebasBook';
+	font-family: 'Prata';
 	color: #fff;
 	font-weight: 1000;
 	font-size: 35px;
 	letter-spacing: 0.75px;
 	margin-right: 5vw;
 }
+.title_r:hover {
+	cursor: default
+}
 .about_info_r{
 	text-align: right;
-	font-family: 'Golos';
+	font-family: 'Manrope';
 	font-size: 20px;
 	letter-spacing: 0.75px;
 	margin-right: 5vw;
 	margin-left: auto;
 	width: 60vw;
 }
-
+.about_info_l{
+	text-align: left;
+	font-family: 'Manrope';
+	font-size: 18px;
+	color: #000;
+	letter-spacing: 0.75px;
+	margin: 2% auto 0 10%;
+	width: 80vw;
+}
+.about_info_l p {
+	color: #1538AE;
+}
+.up_arrow {
+	z-index: 3;
+	position: absolute;
+	width: 5vw;
+	bottom: 10vh;
+  	right: 0;
+	opacity: 0;
+	transition: opacity 0.4s ease;
+	
+}
+.up_arrow img{
+	position: fixed;
+	width: 5vw;
+}
 .panel {
-	height: 12vh;
+	height: 15vh;
 	display: flex;
 	background-color: #fff;
 	align-items: center;
 	padding:0 25px 0 25px;
 }
+.panel p{
+	color: #1538AE;
+	font-weight: 500;
+}
 .logo {
-	font-family: 'Concrete';
+	margin-left: 5vw;
+	font-family: 'Tektur';
 	color: #124f6b;
 	font-size: 30px;
 	display: flex;
 }
+.logo:hover {
+	cursor: default;
+}
+
 .nav_bar {
-	font-family: 'BebasBook';
-	color: #124f6b;
-	font-size: 22px;
-	font-weight: 700;
-	letter-spacing: 0.75px;
+	font-family: 'Tektur';
+	color: #aaa997;
+	font-size: 20px;
+	font-weight: 200;
+	letter-spacing: 1px;
 	margin-left: auto;
+	margin-right: 3vw;
 	display: flex;
 	gap: 30px;
 }
-
+.nav_bar p:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
 .photo {
     width: 100vw;
     height: 89vh;
@@ -111,53 +156,179 @@ body {
 	font-size: 25px;
 }
 
+.about {
+	margin: 10vh 0 10vh 0;
+}
+
 .activities {
-	background-color: #fff;
-	padding-top: 10vh;
-	padding-bottom: 10vh;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+	background-color: #1538AE;
 }
 .activities p {
-	color: #124f6b;
+	color: #fff;
+}
+
+.block {
+	margin-top: 3%;
+	display: flex;
 }
 
 .career {
 	padding-top: 10vh;
-	background-color: #124f6b;
 	padding-bottom: 10vh;
 }
-.career p {
+.link_to_w {
+	width: 20vw;
+	background-color: #fff;
+	border-radius: 4px;
+	font-family: 'Manrope';
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: 0.75px;
+	margin: 2% 0 0 10%;
+	text-align: center;
+	padding: 2vh 0 2vh 0;
+	transition: 0.3s;
+}
+
+.link_to_w:hover {
+	cursor: pointer;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	transform: translate(0, -3px);
+}
+
+.link_to_b {
+	width: 20vw;
+	background-color: #1538AE;
+	border-radius: 4px;
+	font-family: 'Manrope';
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: 0.75px;
+	margin: 2% 0 0 10%;
+	text-align: center;
+	padding: 2vh 0 2vh 0;
+	transition: 0.3s;
 	color: #fff;
 }
-
-.capital {
-	padding-top: 20vh;
-	padding-top: 10vh;
-	padding-bottom: 10vh;
-}
-.capital p {
-	color: #124f6b;
+.link_to_b:hover {
+	cursor: pointer;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	transform: translate(0, -3px);
 }
 
-.EHZ {
-	position: absolute;
-	align-items: center;
-	padding-top: 30vh;
-	margin-bottom: 13vh;
+.carousel {
+    position: relative;
+    width: 100vw;
+    height: 85vh;
+    margin: 0;
 }
-.EHZ p{
-	color: #fff;
+.slides {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+}
+.slide[data-active]{
+    opacity: 1;
+    z-index: 1;
+}
+.slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.carousel_button {
+    height: 100%;
+    width: 6%;
+    position: absolute;
+    z-index: 2;
+    font-size: 50px;
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.carousel_button.prev{
+    left: 0;
+    transition: 0.5s;
+}
+.carousel_button.next{
+    right: 0;
+    transition: 0.5s;
+}
+.carousel_button.prev:hover {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.carousel_button.next:hover {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.about_block {
+	display: flex;
 }
 
-.contacts {
+.number {
+	font-family: "Iceland";
+	font-size: 60px;
+	color: #a1a1a1;
+	line-height: 0px;
+	margin: 0;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+.line {
+	display: flex;
+	height: 7vh;
+	margin-left: 5%;
+}
+.list {
+	margin: 0 0 0 0;
+	width: 50vw;
+}
+.text {
+	margin: 0 0 0 3%;
+	font-family: "Manrope";
+	font-size: 18px;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	height: auto;
+  }
+
+.footer {
 	background-color: #fff;
 	margin-top: 10vh;
-	padding-top: 10vh;
-	padding-bottom: 10vh;
+	padding-bottom: 3vh;
 }
-.contacts p {
-	color: #124f6b;
+.footer_info {
+	display: flex;
+	
 }
-.footer {
-	height: 20vh;
-	background-color: #124f6b
+.footer_info p {
+	font-family: 'Manrope';
+	font-size: 18px;
+	letter-spacing: 0.75px;
+	margin-left: 10vw;
+}
+.left_side {
+	width: 50vw;
+}
+.right_side p{
+	margin-left: 0;
+}
+.map {
+	z-index: 0;
+	margin: 0;
 }

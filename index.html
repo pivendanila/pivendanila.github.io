@@ -6,94 +6,110 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Baikal</title>
 	<link href="styles.css" rel="stylesheet" type="text/css">
+	<script src="js/scripts.js" defer></script>
 	<script src="js/carousel.js" defer></script>
 </head>
 <body>
+	<div class="up_arrow" onclick="scrollUp()">
+		<img src="images/up.png">
+	</div>
 	<section class="panel_section">
 		<div class="panel">
 			<div class="logo">
-				<p>Байкал</p>
+				<img src="images/emblem_blue.png" width="200">
 			</div>
 			<div class="nav_bar">
-				<p>О компании</p>
-				<p>Деятельность</p>
-				<p>Вакансии</p>
-				<p>Контакты</p>
+				<p onclick="scrollToActivities()">Деятельность</p>
+				<p onclick="scrollToCareer()">Карьера</p>
+				<p onclick="scrollToContacts()">Документы</p>
+				<p onclick="scrollToContacts()">Контакты</p>
 			</div>
 		</div>
 	</section>
 	<section class="main_section">
-		<div class="main">
-			<p class="about_info">
-				OOO "Байкал" существует с 2001 года. Мы занимаемся производством электромонтажных и строительных работ.
-			</p>
-			<p class="about_info">
-				На постоянной основе выполняем работы для: ОАО «ПО «ЭХЗ», ФГУП «Горно-химический комбинат» г. Железногорск,	Филиала ПАО ОГК-2 «Красноярская ГРЭС-2»
-			</p>
-			<p class="about_info">
-				Мы развиваемся и растем. Численность персонала на начало 2020 года составляла 73 человека, на 25.10.2023 года составляет 126 человек.
-			</p>
+		<div class="main_carousel">
+			<div class="carousel">
+	            <button class="carousel_button next" onclick="Next1();">&#8250;</button>
+	            <button class="carousel_button prev" onclick="Prev1();">&#8249;</button>
+	            <ul class="slides">
+	                <li class="slide" data-active><img src="images\Carousel\img_1.jpg" alt="Image 1"></li>
+	                <li class="slide"><img src="images\Carousel\img_2.jpg" alt="Image 2"></li>
+					<li class="slide"><img src="images\Carousel\img_3.jpg" alt="Image 3"></li>
+	            </ul>
+	        </div>
 		</div>
-		<div class="photo">
-                <img src="images\main.jpg" alt="Image 2">
-        </div>
 	</section>
-	<section class="activities_section">
+	<section class="about_section">
+		<div class="about">
+			<p class="title">О компании</p>
+			<div class="block">
+				<p class="about_info">
+						Общество с ограниченной ответственностью "Байкал" основано в 1998 году.<br>
+						За годы плодотворной работы компания прошла большой путь развития<br>
+						 и накопления опыта, превратившись в одного из главных подрядчиков<br>
+						 АО “ПО ЭХЗ” (предприятие ГК Росатом), обладающего лицензией Ростехнадзора для предоставления услуг объектам использования атомной энергии, лицензией МЧС.
+				</p>
+				<div class="list">
+					<div class="line">
+						<p class="number">1</p>
+						<p class="text">Является членом СРО</p>
+					</div>
+					<div class="line">
+						<p class="number">2</p>
+						<p class="text">Выручка за 2023 год - 229,4 млн руб</p>
+					</div>
+					<div class="line">
+						<p class="number">3</p>
+						<p class="text">Численность предприятия более 200 человек</p>
+					</div>	
+				</div>	
+			</div>
+		</div>
+	</section>
+	<section class="activity_section">
 		<div class="activities">
-			<p class="title_r">Деятельность</p>
-			<p class="about_info_r">
-				В рамках заключенных договоров с основными подрядчиками АО «ПО «ЭХЗ», АО «ТВЭЛ-СТРОЙ» общество производит весь цикл работ начиная с демонтажа оборудования, бетонных и металлических конструкции, кабельной продукции, электромонтажных и строительных материалов.
+			<p class="title">Деятельность</p>
+			<p class="about_info_l">
+				Предприятие выполняет комплекс работ – строительно-монтажные, электромонтажные, пусконаладочные,<br>
+				а также предоставляет услуги по техническому обслуживанию и ремонту оборудования,<br>
+				электрических и инженерных сетей. <br>
+				Во всех направлениях своей деятельности предприятие использует современные передовые технологии.<br>
 			</p>
-			<p class="about_info_r">
-				В дальнейшем разрабатывается и утверждается заказчиком проект производства работ (ППР), затем, в соответствии с проектно-сметной документацией производится закупка материалов и оборудования, после этого производятся монтажные работы оборудования и материалов, затем готовится сдаточная и исполнительная документация.
-			</p>
+			<div class="link_to_w">Перечень проводимых работ</div>
 		</div>
 	</section>
 	<section class="career_section">
 		<div class="career">
 			<p class="title">Карьера</p>
-			<p class="about_info">
-				Имеется в наличие собственное оборудование и инструменты для производства электромонтажных и строительных работ. Каждый работник ООО «Байкал» обеспечен необходимым для производства работ инструментом и спецодеждой.
+			<p class="about_info_l">
+				На предприятии действует программа по набору студентов зеленогорского техникума.<br>
+				Осуществляется программа переподготовки кадров, а также программа по повышению квалификаций работников.<br><br>
+				Производственная деятельность предприятия осуществляется при безусловном выполнении норм<br>
+				 и правил безопасности охраны труда и природоохранного законодательства.<br>
+				 Опыт работы Общества, с соблюдением требований нормативных документов, с наличием и привлечением квалифицированных кадров,<br>
+				 обеспечивает выполнение работ на высоком уровне и с высоким качеством.
 			</p>
-			
-		</div>
-	</section>
-	<section class="capital_section">
-		<div class="capital">
-			<p class="about_info_r">
-				Уставный капитал: 100 т. руб.
-			</p>
-			<p class="about_info_r">
-				Выручка за 2023 год: 229,4 млн руб.
-			</p>
-			<p class="about_info_r">
-				Баланс за 2023 год: 177,6 млн руб.
-			</p>
-			
-		</div>
-	</section>
-	<section class="EHZ_section">
-		<div class="EHZ">
-			<p class="about_info">
-				В настоящее время ООО «Байкал» практически единственная организация подрядчик на территории АО «ПО «ЭХЗ» выполняющая весь спектр строительных и электромонтажных работ.
-			</p>
-			
-		</div>
-		<div class="photo">
-			<img src="images/info.jpg">
-		</div>
-	</section>
-	<section class="contacts_section">
-		<div class="contacts">
-			<p class="title">Контакты</p>
-			<p class="about_info">
-				Повседневная практика показывает, что высококачественный прототип будущего проекта создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса позиций, занимаемых участниками в отношении поставленных задач. Однозначно, базовые сценарии поведения пользователей набирают популярность среди определенных слоев населения, а значит, должны быть объективно рассмотрены соответствующими инстанциями. Как принято считать, сторонники тоталитаризма в науке будут указаны как претенденты на роль ключевых факторов.
-			</p>
+			<div class="link_to_b">Подробнее о вакансиях</div>
 		</div>
 	</section>
 	<section class="footer_section">
 		<div class="footer">
+			<p class="title">Контакты</p>
+			<div class="footer_info">
+				<div class="left_side">
+					<p>ООО "Байкал"</p>
+					<p>Красноярский край, г. Зеленогорск<br>ул. Октябрьская, дом 61, 663690</p>
+					<p>Тел./факс (39169)4-77-56<br>электронная почта: <a href="mailto:info@24baikal.ru">info@24baikal.ru</a></p>
+				</div>
+				<div class="right_side">
+					<p>ОГРН 1022401485358, ИНН/КПП 2453007350/245301001</p>
+					<p>расчетный счет 40702810795240170013<br>в Ф-Л СИБИРСКИЙ ПАО БАНК "ФК ОТКРЫТИЕ"<br>г. Новосибирск, корсчет 30101810250040000867, БИК 045004867</p>
+				</div>
+			</div>
 		</div>
 	</section>
+	<div class="map">
+		<iframe src="https://yandex.ru/map-widget/v1/?ll=94.601492%2C56.106117&mode=search&oid=241465262348&ol=biz&sctx=ZAAAAAgBEAAaKAoSCY9WtaSjUD5AEQgB%2BRIq%2BE1AEhIJ4nMn2H8d5z8RhlYnZyjuzD8iBgABAgMEBSgKOABA%2BJwBSAFqAnJ1nQHNzEw9oAEAqAEAvQGX426GwgEFitWQrgaCAiPQt9C10LvQtdC90L7Qs9C%2B0YDRgdC6INCx0LDQudC60LDQu4oCAJICBTM3MTgwmgIMZGVza3RvcC1tYXBz&sll=94.601492%2C56.106117&sspn=0.030093%2C0.016511&text=%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA%20%D0%B1%D0%B0%D0%B9%D0%BA%D0%B0%D0%BB&z=14.93" width="1520" height=350 frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
+	</div>
 </body>
 </html>
