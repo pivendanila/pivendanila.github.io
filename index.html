@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Baikal</title>
 	<link href="styles.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 	<script src="js/scripts.js" defer></script>
 	<script src="js/carousel.js" defer></script>
 </head>
@@ -19,9 +20,15 @@
 				<img src="images/emblem_blue.png" width="200">
 			</div>
 			<div class="nav_bar">
-				<p onclick="scrollToActivities()">Деятельность</p>
-				<p onclick="scrollToCareer()">Карьера</p>
-				<p onclick="scrollToContacts()">Документы</p>
+				<a href="activity.html" style="display: block; text-decoration: none;">
+					<p>Деятельность</p>
+				</a>
+				<a href="career.html" style="display: block; text-decoration: none;">
+					<p>Карьера</p>
+				</a>
+				<a href="documents.html" style="display: block; text-decoration: none;">
+					<p>Документы</p>
+				</a>
 				<p onclick="scrollToContacts()">Контакты</p>
 			</div>
 		</div>
@@ -32,9 +39,15 @@
 	            <button class="carousel_button next" onclick="Next1();">&#8250;</button>
 	            <button class="carousel_button prev" onclick="Prev1();">&#8249;</button>
 	            <ul class="slides">
+<<<<<<< Updated upstream
 	                <li class="slide" data-active><img src="images\Carousel\img_1.JPG" alt="Image 1"></li>
 	                <li class="slide"><img src="images\Carousel\img_2.JPG" alt="Image 2"></li>
 					<li class="slide"><img src="images\Carousel\img_3.JPG" alt="Image 3"></li>
+=======
+	                <li class="slide" data-active><img src="images\Carousel\img_3.png" alt="Image 1"></li>
+	                <li class="slide"><img src="images\Carousel\img_1.png" alt="Image 2"></li>
+					<li class="slide"><img src="images\Carousel\img_2.png" alt="Image 3"></li>
+>>>>>>> Stashed changes
 	            </ul>
 	        </div>
 		</div>
@@ -75,7 +88,10 @@
 				электрических и инженерных сетей. <br>
 				Во всех направлениях своей деятельности предприятие использует современные передовые технологии.<br>
 			</p>
-			<div class="link_to_w">Перечень проводимых работ</div>
+			<a href="activity.html" style="display: block; text-decoration: none; color: #000;">
+				<div class="link_to_w">Перечень проводимых работ</div>
+			</a>
+			</div>
 		</div>
 	</section>
 	<section class="career_section">
@@ -89,11 +105,13 @@
 				 Опыт работы Общества, с соблюдением требований нормативных документов, с наличием и привлечением квалифицированных кадров,<br>
 				 обеспечивает выполнение работ на высоком уровне и с высоким качеством.
 			</p>
-			<div class="link_to_b">Подробнее о вакансиях</div>
+			<a href="career.html" style="display: block; text-decoration: none; color: #000;">
+				<div class="link_to_b">Подробнее о вакансиях</div>
+			</a>
 		</div>
 	</section>
 	<section class="footer_section">
-		<div class="footer">
+		<div class="footer" id="contacts">
 			<p class="title">Контакты</p>
 			<div class="footer_info">
 				<div class="left_side">

@@ -117,7 +117,7 @@ body {
 	display: flex;
 }
 .logo:hover {
-	cursor: default;
+	cursor: pointer;
 }
 
 .nav_bar {
