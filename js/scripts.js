@@ -28,3 +28,18 @@ function scrollToContacts() {
     const element = document.querySelector('.footer');
     element.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const workItems = document.querySelectorAll('.work-item');
+
+    workItems.forEach(item => {
+        const title = item.querySelector('.work-title');
+        const details = item.querySelector('.work-details');
+        const arrow = item.querySelector('.arrow');
+
+        title.addEventListener('click', () => {
+            details.classList.toggle('open');
+            arrow.classList.toggle('open');
+        });
+    });
+});
