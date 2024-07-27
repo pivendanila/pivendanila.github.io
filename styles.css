@@ -1,4 +1,4 @@
-@charset "UTF-8";
+ @charset "UTF-8";
 
 @font-face {
     font-family: 'Tektur';
@@ -22,7 +22,7 @@ body {
     height: 100%;
     overflow-x: hidden;
 	display: inline-block;
-	background-color: #fff;
+	background-color: #f7f7f7;
 	margin-top: 0px;
 	margin-right: 0px;
 	margin-bottom: 0px;
@@ -42,15 +42,6 @@ body {
 .title:hover {
 	cursor: default
 }
-.about_info{
-	text-align: left;
-	font-family: 'Manrope';
-	color: #000;
-	font-size: 18px;
-	letter-spacing: 0.75px;
-	margin: 1% 0 0 10%;
-	width: 65%;
-}
 .title_r {
 	text-align: right;
 	font-family: 'Prata';
@@ -62,6 +53,16 @@ body {
 }
 .title_r:hover {
 	cursor: default
+}
+
+.about_info{
+	text-align: left;
+	font-family: 'Manrope';
+	color: #000;
+	font-size: 18px;
+	letter-spacing: 0.75px;
+	margin: 1% 0 0 10%;
+	width: 65%;
 }
 .about_info_r{
 	text-align: right;
@@ -83,6 +84,19 @@ body {
 }
 .about_info_l p {
 	color: #1538AE;
+}
+.activity_information {
+	margin-top: 5%;
+}
+.activity_info{
+	text-indent: 3%;
+	text-align: left;
+	font-family: 'Manrope';
+	color: #000;
+	font-size: 20px;
+	letter-spacing: 0.75px;
+	margin: 1% 0 0 15%;
+	width: 70%;
 }
 .up_arrow {
 	z-index: 3;
@@ -308,7 +322,6 @@ body {
   }
 
 .footer {
-	background-color: #fff;
 	margin-top: 10vh;
 	padding-bottom: 3vh;
 }
@@ -331,4 +344,56 @@ body {
 .map {
 	z-index: 0;
 	margin: 0;
+}
+
+.work-list {
+    max-width: 70%;
+    margin: 3% auto;
+    padding: 0 15px;
+    background-color: #fff;
+}
+
+.work-item {
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.work-item:last-child {
+    border-bottom: none;
+}
+
+.work-title {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Prata';
+	color: #1538AE;
+	font-weight: 400;
+	font-size: 25px;
+}
+
+.work-title:hover{
+		color: #7285c2;
+}
+.work-details {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 2vh;
+    margin-bottom: 1vh;
+    transition: max-height 1s ease, padding 0.8s ease;
+}
+
+.work-details.open {
+    max-height: 50vh; /* Adjust according to the content's height */
+    padding-top: 2vh;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.arrow.open {
+    transform: rotate(180deg);
 }
