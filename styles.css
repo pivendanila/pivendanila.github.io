@@ -39,6 +39,23 @@ body {
 	letter-spacing: 0.75px;
 	margin: 0 0 0 10vw;
 }
+.sub_title {
+	font-family: 'Prata';
+	color: #1538AE;
+	font-weight: 400;
+	font-size: 20px;
+	letter-spacing: 0.75px;
+	margin: 1vh 4vw;
+}
+.sub_info {
+	text-align: left;
+	font-family: 'Manrope';
+	color: #000;
+	font-size: 18px;
+	letter-spacing: 0.75px;
+	margin: 0.5vh 0 0 6vw;
+	width: 65%;
+}
 .title:hover {
 	cursor: default
 }
@@ -82,10 +99,16 @@ body {
 	margin: 2% auto 0 10%;
 	width: 80vw;
 }
+.activity_list {
+	margin-top: 5vh;
+}
 .about_info_l p {
 	color: #1538AE;
 }
 .activity_information {
+	margin-top: 5%;
+}
+.career_information {
 	margin-top: 5%;
 }
 .activity_info{
@@ -95,7 +118,7 @@ body {
 	color: #000;
 	font-size: 20px;
 	letter-spacing: 0.75px;
-	margin: 1% 0 0 15%;
+	margin: 0.2% 0 0 15%;
 	width: 70%;
 }
 .up_arrow {
@@ -349,7 +372,7 @@ body {
 .work-list {
     max-width: 70%;
     margin: 3% auto;
-    padding: 0 15px;
+    padding: 0 2vw;
     background-color: #fff;
 }
 
@@ -380,20 +403,12 @@ body {
 .work-details {
     max-height: 0;
     overflow: hidden;
-    padding: 0 2vh;
+    padding: 0;
     margin-bottom: 1vh;
     transition: max-height 1s ease, padding 0.8s ease;
 }
 
 .work-details.open {
-    max-height: 50vh; /* Adjust according to the content's height */
+    max-height: 60vh;
     padding-top: 2vh;
-}
-
-.arrow {
-    transition: transform 0.3s ease;
-}
-
-.arrow.open {
-    transform: rotate(180deg);
 }

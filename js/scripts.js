@@ -35,11 +35,8 @@ document.addEventListener('DOMContentLoaded', function() {
     workItems.forEach(item => {
         const title = item.querySelector('.work-title');
         const details = item.querySelector('.work-details');
-        const arrow = item.querySelector('.arrow');
-
         title.addEventListener('click', () => {
             details.classList.toggle('open');
-            arrow.classList.toggle('open');
         });
     });
 });
