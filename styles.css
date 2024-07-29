@@ -119,6 +119,7 @@ body {
 	font-size: 20px;
 	letter-spacing: 0.75px;
 	margin: 0.2% 0 0 15%;
+	margin: 1% 0 0 15%;
 	width: 70%;
 }
 .up_arrow {
@@ -373,6 +374,7 @@ body {
     max-width: 70%;
     margin: 3% auto;
     padding: 0 2vw;
+    padding: 0 15px;
     background-color: #fff;
 }
 
@@ -398,17 +400,19 @@ body {
 }
 
 .work-title:hover{
-		color: #7285c2;
+	color: #7285c2;
 }
 .work-details {
     max-height: 0;
     overflow: hidden;
     padding: 0;
+    padding: 0 2vh;
     margin-bottom: 1vh;
     transition: max-height 1s ease, padding 0.8s ease;
 }
 
 .work-details.open {
     max-height: 60vh;
+    padding-top: 2vh;
     padding-top: 2vh;
 }
