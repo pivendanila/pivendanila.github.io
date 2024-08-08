@@ -7,6 +7,7 @@
 	<script src="js/scripts.js" defer></script>
 	<title>Baikal</title>
 	<link href="styles.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
 	<section class="panel_section">
@@ -47,7 +48,7 @@
 		обеспечивает выполнение работ на высоком уровне и на высоком качестве.</p>
 	</section>
 	<section class="activity_list">
-		<p class="title">Кого мы ищем:</p>
+		<p class="title_act">Кого мы ищем:</p>
 		<div class="work-list">
 	        <div class="work-item">
 	            <div class="work-title">
@@ -63,6 +64,9 @@
 					
 					<p class="sub_title">Заработная плата:</p>
 					<p class="sub_info">От От 60 000 руб.</p>
+					<a class='open-form-btn' style="display: block; text-decoration: none; color: #000;">
+						<div class="form_button">Оставить заявку</div>
+					</a>
 	            </div>
 	        </div>
 	        <div class="work-item">
@@ -80,6 +84,9 @@
 					
 					<p class="sub_title">Заработная плата:</p>
 					<p class="sub_info">От От 60 000 руб.</p>
+					<a class='open-form-btn' style="display: block; text-decoration: none; color: #000;">
+						<div class="form_button">Оставить заявку</div>
+					</a>
 	            </div>
 	        </div>
 	        <div class="work-item">
@@ -99,6 +106,9 @@
 					
 					<p class="sub_title">Заработная плата:</p>
 					<p class="sub_info">От От 50 000 руб.</p>
+					<a class='open-form-btn' style="display: block; text-decoration: none; color: #000;">
+						<div class="form_button">Оставить заявку</div>
+					</a>
 	            </div>
 	        </div>
 	        <div class="work-item">
@@ -118,6 +128,9 @@
 					
 					<p class="sub_title">Заработная плата:</p>
 					<p class="sub_info">От От 70 000 руб.</p>
+					<a class='open-form-btn' style="display: block; text-decoration: none; color: #000;">
+						<div class="form_button">Оставить заявку</div>
+					</a>
 	            </div>
 	        </div>
 	        <div class="work-item">
@@ -140,6 +153,9 @@
 					
 					<p class="sub_title">Заработная плата:</p>
 					<p class="sub_info">От От 80 000 руб.</p>
+					<a class='open-form-btn' style="display: block; text-decoration: none; color: #000;">
+						<div class="form_button">Оставить заявку</div>
+					</a>
 	            </div>
 	        </div>
 	        <div class="work-item">
@@ -156,9 +172,37 @@
 					
 					<p class="sub_title">Заработная плата:</p>
 					<p class="sub_info">От От 50 000 руб.</p>
+					<a class='open-form-btn' style="display: block; text-decoration: none; color: #000;">
+						<div class="form_button">Оставить заявку</div>
+					</a>
 	            </div>
 	        </div>
 	    </div>
 	</section>
+
+    <div class="form-popup" id="formPopup">
+    	<div class="overlay" id="overlay"></div>
+        <div class="form-container">
+            <p class="form_title">Заполните анкету</p>
+            <form id="contactForm">
+                <select class="form_text selecter" name="vacancy" required>
+                    <option value="">Выберите вакансию</option>
+                    <option value="Кровельщик">Кровельщик</option>
+                    <option value="Каменщик">Каменщик</option>
+                    <option value="Электромонтажник">Электромонтажник</option>
+                    <option value="Электрогазосварщик">Электрогазосварщик</option>
+                    <option value="Инженер-сварщик">Инженер-сварщик</option>
+                    <option value="Монтажник металлоконструкций">Монтажник металлоконструкций</option>
+                </select>
+                <input type="text" class="form_text" placeholder="ФИО" name="name" required>
+                <input type="text" class="form_text" placeholder="Опишите опыт работы" name="experience" required>
+                <input type="text" class="form_text" placeholder="Контактный номер" name="number" required>
+                
+                <button type="submit" class="btn form_text">
+                	<span>Отправить</span>
+                </button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
